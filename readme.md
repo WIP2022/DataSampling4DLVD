@@ -3,6 +3,12 @@ This is the official replication repository for our paper
 > *Does data sampling improve deep learning-based
 vulnerability detection? Yeas! and Nays!*
 
+This repo consist three model that are developed based on their official releases github repo.
+1. [IVDetect](https://github.com/vulnerabilitydetection/VulnerabilityDetectionResearch)
+2. [Reveal](https://github.com/VulDetProject/ReVeal)
+3. [LineVul/codebert](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/Defect-detection)
+
+We thank for researchers for their hard work.
 ## 1 models
 The repository consist of 3 model replication folder. Also required package are listed.
 ###  1.1 IVDetect_model
@@ -18,15 +24,15 @@ Package:
 
 Package:
 1. pytorch
-2. dgl
+2. dgl (which includes the GNNExplainer implementation for XAI)
 3. imblearn
 4. sklearn
 
-### 1.3 LineVul 
+### 1.3 LineVul_model
 package:
 1. Pytorch
 2. Transformer (by Huggingface)
-3. Lime
+3. Lime (if you want to use the XAI tool Lime)
 4. tensorflow
 5. imblearn
 6. sklearn

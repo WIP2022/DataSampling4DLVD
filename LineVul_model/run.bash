@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=0,1 python my_run.py \
+        --output_dir=./msr_outout/ros_2x \
+        --model_type=roberta \
+        --tokenizer_name=microsoft/codebert-base \
+        --model_name_or_path=microsoft/codebert-base \
+        --do_train \
+        --do_test\
+        --train_data_file=../msr_dataset/ros_2x/train.jsonl \
+        --test_data_file=../msr_dataset/origin/data_split_0/test.jsonl \
+        --epoch 4 \
+        --block_size 400 \
+        --train_batch_size 64 \
+        --eval_batch_size 32 \
+        --learning_rate 5e-5 \
+        --max_grad_norm 1.0

@@ -1,11 +1,16 @@
 # IVDetect readme
-This repo is based on github repo of [IVDetect](https://github.com/vulnerabilitydetection/VulnerabilityDetectionResearch)
+This repo is based on official github repo of [IVDetect](https://github.com/vulnerabilitydetection/VulnerabilityDetectionResearch)
+
 This implementation also require a specific version of joern and a specific script for joern to extract the graph. please see the above link to the official github of IVDetect.
-However, we will provide a pre-proceed dataset(as state in main readme file) so that you can skip the joern step.
+However, we will provide a pre-proceed dataset(as state in main readme file) in zenodo so that you can skip the joern step.
 
 ## 0 pre-process with joern(optional)
 This step extract graph from code. We provide pre-processed dataset. But if you want to use your datasets, you need this step. 
-
+1. unzip `joern.zip`
+2. prepare raw datasets
+3. check code in `preprocess.py`, change dataset directory,joern directory, and destination folder
+4. run `preprocess.py
+   `
 **starting from here, you need the pre-processed dataset to continue.**
 ## 1 generate glove
 
