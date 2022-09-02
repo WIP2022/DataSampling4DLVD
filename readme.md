@@ -11,6 +11,8 @@ Package:
 2. Pytorch-geometric
 3. imblearn
 4. sklearn
+5. gensim
+6. nni
 ### 1.2 Reveal_model
 >**Devign_model** also inside Reveal_model folder. This is because the author of Devign didn't open source the code, our implementation of Devign are based on the replicate written by Reveal's author.
 
