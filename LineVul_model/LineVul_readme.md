@@ -34,8 +34,8 @@ I append a prediction with probability file as like the above one.
 
 We also provide a pipeline that fine-tunes [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) on this task.
 
-### Fine-tune
-
+### Sampling_R
+See example in `exp.bash` or see under:
 ```shell
 cd code
 CUDA_VISIBLE_DEVICES=3, python my_run.py \
@@ -54,7 +54,12 @@ CUDA_VISIBLE_DEVICES=3, python my_run.py \
     --learning_rate 5e-5 \
     --max_grad_norm 1.0
 ```
-explain:
+
+### Sampling_L
+require the NoSampling trained model from previous step
+see example run script in `exp_latent.bash`
+
+### explaination:
 1. CUDA_VISIBLE_DEVICES -> which gpu to use. Count from 0. I usually might using the 0, you can use the other.
 2. do_train -> actually the fine tuning process
 3. do_test -> use with do_test, it will run the test set and calculate the performance 
@@ -69,6 +74,10 @@ explain:
 2. fine-tuned model will be save at out_dir/model.bin
 3. also prediction and prediction_probability file will be at output dir, you can run `python ../evaluator/evaluator.py -a ../dataset/test.jsonl -p outdir/predictions.txt -b outdir/prediction_prob.txt` to evaluate again
 
+### Lime
+1. For sampling_R, run the jupyter notebook `lime_explainer.ipynb`
+2. For samplong_L, rin the jupyter notebook `lime_explainer-latent.ipynb`
+3. run `lime_result_analyser.ipynb` to calculate the hit rate
 
 
 ## Reference
