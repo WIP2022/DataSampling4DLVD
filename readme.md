@@ -3,6 +3,10 @@ This is the official replication repository for our paper
 > *Does data sampling improve deep learning-based
 vulnerability detection? Yeas! and Nays!*
 
+Please see our zenodo site for our proceed datasets at:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7057996.svg)](https://doi.org/10.5281/zenodo.7057996)
+
 This repo consist three model that are developed based on their official releases github repo.
 1. [IVDetect](https://github.com/vulnerabilitydetection/VulnerabilityDetectionResearch)
 2. [Reveal](https://github.com/VulDetProject/ReVeal)
@@ -38,7 +42,7 @@ package:
 6. sklearn
 
 ## 2 Datasets
-We use three datasets in the experiment, we provide only the link to the **raw** dataset here, and we will provide the **processed** datasets(as model input) in each model's folder
+We use three datasets in the experiment, we provide only the link to the **raw** dataset here, and we will provide the **processed** datasets(as model input) in zenodo 
 1. [Devign](https://drive.google.com/file/d/1x6hoF7G-tSYxg8AFybggypLZgMGDNHfF/view) dataset
     1. for more detailed info about the devign datasets, check [Devign's official webpage](https://sites.google.com/view/devign)
 2. [Reveal](https://drive.google.com/drive/folders/1KuIYgFcvWUXheDhT--cBALsfy1I4utOy) dataset
