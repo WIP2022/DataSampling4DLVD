@@ -29,9 +29,9 @@ embed word->vec with glove
 
 shard splitter will split dataset into 5 shard, use 4 for train, 1 for test. You decide.
 
-## 4. model training
+## 4. model training & **raw code level sampling**
 1. `--proceed_dir` where the shards at
-2. `--sampling` to do **Sampling_R**
+2. `--sampling` to do **Sampling_R (ROS_R or RUS_R)**
 
 ## 5. parameter
 1. line#175 for parameter
@@ -39,7 +39,7 @@ shard splitter will split dataset into 5 shard, use 4 for train, 1 for test. You
    1. `nnictl create --config config.yml` etc
    2. see microsoft NNI for more autoML fine-tuning detail
 
-## 6. latent level sampling + retrain final classifier
+## 6. **latent level sampling** + retrain final classifier
 1. use the `train_X, train_y ,test_X, test_y`vector(in numpy format) obtain from the previous step. Which should be train on origin imbalanced data.
 2. see example notebook in `latent_find_tune.ipynb` 
 3. change the imbalance learn class for other latent level samlpling approach to do **Sampling_L**

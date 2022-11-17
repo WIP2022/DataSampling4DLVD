@@ -34,7 +34,11 @@ I append a prediction with probability file as like the above one.
 
 We also provide a pipeline that fine-tunes [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) on this task.
 
-### Sampling_R
+## data split & data sampling
+run file `data_splitter.py` to do data splitting and data sampling
+  1. change parameter `--sampling_type` to do **raw code level sampling**
+
+### run with **Sampling_R**
 See example in `exp.bash` or see under:
 ```shell
 cd code
@@ -55,7 +59,7 @@ CUDA_VISIBLE_DEVICES=3, python my_run.py \
     --max_grad_norm 1.0
 ```
 
-### Sampling_L
+### run with **Sampling_L**
 require the NoSampling trained model from previous step
 see example run script in `exp_latent.bash`
 

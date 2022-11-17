@@ -10,15 +10,16 @@ Please also note that for the BigVul(aka MSR)datasets, many code cannot be parse
 
 **starting from here, you need the pre-processed dataset to continue.**
 
-## 1 train-test split
-1.  use `data_sampler.py` to split the train-test set with ROS_R or RUS_R
+## 1 train-test split & sampling
+1.  use `data_sampler.py` to split the train-test set 
+    1. change parameter `--sampling_type` to do raw code level sampling **with ROS_R or RUS_R**
 
-## 2 train model with sampling_R
+## 2 train model with **sampling_R**
 1.  see the bash file`exp.bash` for a example of quick start
 2.  see the `main.py` arguments for further modification of parameters
 
-## 3 train model with sampling_L
-1. This required the model trained by previous step that train with noSampling.
+## 3 train model with **sampling_L**
+1. This required the model trained by previous step that train with **noSampling**.
 2. see the `exp_latent.sh` for quick start
 3. see the `backbone.py` arguments for futher modification parameters
 
