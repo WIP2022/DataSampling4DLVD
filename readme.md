@@ -4,8 +4,8 @@ This is the official replication repository for our paper
 vulnerability detection? Yeas! and Nays!*
 
 ## 0.datasets
-### 0.1 proceeded datasets dump availble in Zenodo:
-Please click to see our zenodo site for our proceed datasets at:
+### 0.1 processed datasets dump availble in Zenodo:
+Please click to see our zenodo site for our processed datasets at:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7057996.svg)](https://doi.org/10.5281/zenodo.7057996)
 
