@@ -1,4 +1,4 @@
-This readme file also the repo is based on 'codeXglue'[https://microsoft.github.io/CodeXGLUE/] which is the same as the backbone network of the model proposed in 'LineVul'
+This readme file also the repo is based on 'codeXglue'[https://microsoft.github.io/CodeXGLUE/] which is the same as the backbone network of the model proposed in 'LineVul'[https://github.com/awsm-research/LineVul]
 # CodeXGLUE -- Defect Detection
 
 ## Task Definition
@@ -85,10 +85,12 @@ see example run script in `exp_latent.bash`
 
 
 ## Reference
-<pre><code>@inproceedings{zhou2019devign,
-  title={Devign: Effective vulnerability identification by learning comprehensive program semantics via graph neural networks},
-  author={Zhou, Yaqin and Liu, Shangqing and Siow, Jingkai and Du, Xiaoning and Liu, Yang},
-  booktitle={Advances in Neural Information Processing Systems},
-  pages={10197--10207},
-  year={2019}
-}</code></pre>
+<pre><code>
+@inproceedings{fu2022linevul,
+  title={LineVul: A Transformer-based Line-Level Vulnerability Prediction},
+  author={Fu, Michael and Tantithamthavorn, Chakkrit},
+  booktitle={2022 IEEE/ACM 19th International Conference on Mining Software Repositories (MSR)},
+  year={2022},
+  organization={IEEE}
+}
+</code></pre>
