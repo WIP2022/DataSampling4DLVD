@@ -17,7 +17,7 @@ Please also note that for the BigVul(aka MSR)datasets, many code cannot be parse
 ## 2 train model with **sampling_R**
 1.  see the bash file`exp.bash` for a example of quick start
 2.  see the `main.py` arguments for further modification of parameters
-
+    1. change parameter `--model_type` to choose between using **devign** or **reveal**
 ## 3 train model with **sampling_L**
 1. This required the model trained by previous step that train with **noSampling**.
 2. see the `exp_latent.sh` for quick start
